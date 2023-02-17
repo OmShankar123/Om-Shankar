@@ -368,6 +368,11 @@
   [data-percentage="75%"] .skill-level-bar {
     width: 75%;
   }
+   
+  [data-percentage="65%"] .skill-level-bar {
+    width: 65%;
+  }
+   
   [data-percentage="85%"] .skill-level-bar {
     width: 85%;
   }
@@ -381,7 +386,7 @@
  
   #contact-section {
     background-color: #f8f9fa;
-    padding: 100px 0;
+    padding: 50px 0;
   }
   
   #contact-section h2 {
@@ -563,6 +568,8 @@
 /* Style for the contact details */
 .contact-details {
   margin-right: 20px;
+  margin-left: 20px;
+
   font-size: 14px;
 }
 
@@ -640,6 +647,8 @@
 
 /* Style for the contact details */
 #contact-details {
+ 
+
   margin-right: 20px;
   font-size: 14px;
   color: #fff;
@@ -739,4 +748,105 @@
 }
 
 
+
+
+.educational-background {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+  
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.educational-background li {
+  margin-bottom: 2rem;
+  margin-left: 20px;
+  margin-right: 20px;
+  /* align-items: center; */
+  /* justify-items: center; */
+  
+  
+
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 800px;
+  position: relative;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin: 0;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.educational-background li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #0c4b33;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: -1;
+}
+
+.educational-background li:hover::before {
+  opacity: 0.2;
+}
+
+.educational-background li::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: #0c4b33;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+  transform-origin: left;
+}
+
+.educational-background li:hover::after {
+  transform: scaleX(1);
+}
+
+/* Styles for mobile devices */
+@media (max-width: 576px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  .educational-background li {
+    width: 100%;
+  }
+}
 
