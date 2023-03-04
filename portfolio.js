@@ -52,13 +52,13 @@ window.addEventListener('scroll', () => {
   const scrollY = window.scrollY;
   
   if (scrollY > skillsSectionTop - windowHeight && !animated) {
-    const htmlProgress = document.querySelector('.html-progress');
-    const cssProgress = document.querySelector('.css-progress');
-    const jsProgress = document.querySelector('.js-progress');
+    const skillProgress = document.querySelector('.skill-progress');
+//     const cssProgress = document.querySelector('.css-progress');
+//     const jsProgress = document.querySelector('.js-progress');
     
-    htmlProgress.classList.add('animated');
-    cssProgress.classList.add('animated');
-    jsProgress.classList.add('animated');
+    skillProgress.classList.add('animated');
+//     cssProgress.classList.add('animated');
+//     jsProgress.classList.add('animated');
     
     animated = true;
   }
