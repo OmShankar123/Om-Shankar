@@ -42,6 +42,27 @@ form.addEventListener('submit', function(event) {
   alert('Thanks for contacting us!');
   form.reset();
 });
+// Animate progress bars on scroll
+let animated = false;
+
+window.addEventListener('scroll', () => {
+  const skillsSection = document.querySelector('#skills');
+  const skillsSectionTop = skillsSection.offsetTop;
+  const windowHeight = window.innerHeight;
+  const scrollY = window.scrollY;
+  
+  if (scrollY > skillsSectionTop - windowHeight && !animated) {
+    const htmlProgress = document.querySelector('.html-progress');
+    const cssProgress = document.querySelector('.css-progress');
+    const jsProgress = document.querySelector('.js-progress');
+    
+    htmlProgress.classList.add('animated');
+    cssProgress.classList.add('animated');
+    jsProgress.classList.add('animated');
+    
+    animated = true;
+  }
+});
 
 
 //with api call
