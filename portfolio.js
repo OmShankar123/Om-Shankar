@@ -39,7 +39,7 @@ form.addEventListener('submit', function(event) {
   // Open email client
   window.location.href = link;
   
-  alert('Thanks for contacting us!');
+  alert('Thanks for contacting me!');
   form.reset();
 });
 // Animate progress bars on scroll
