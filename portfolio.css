@@ -1018,34 +1018,36 @@ strong {
   background: #000;
 } */
 .wrapper1{
-  height: 60px;
+  /* height: 60px; */
   width: 100%;
-  position: relative;
+  /* position: relative; */
   /* background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0); */
-  border-radius: 10px;
+  
   cursor: default;
   animation: animate 1.5s linear infinite;
-  background: #000;
+  background: #bfb4b4;
+  
 }
 .wrapper1 .display,
 .wrapper1 span{
   position: absolute;
   top: 70%;
-  left: 90%;
-  transform: translate(-50%, -50%);
+  left: 60%;
+  
+  /* transform: translate(-50%, -50%); */
 }
 .wrapper1 .display{
   z-index: 999;
   /* height: 85px; */
-  width: 100%;
+  /* width: 10%; */
   /* background: #1b1b1b; */
   border-radius: 6px;
-  text-align: center;
+  /* text-align: left; */
 }
 .display #time{
   line-height: 85px;
   color: #000;
-  font-size: 50px;
+  font-size: 30px;
   font-weight: 600;
   letter-spacing: 1px;
   background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
