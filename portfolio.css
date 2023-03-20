@@ -608,7 +608,7 @@ body{
     background-color: #0069d9;
     /* background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0); */
 
-  } */
+   */
   
 
   footer {
@@ -899,6 +899,16 @@ body{
     margin-left: 0;
     margin-bottom: 10px;
   }
+
+  .wrapper1 .display,
+  .wrapper1 span{
+    position: absolute;
+    top: 70%;
+    left: 75%;
+    
+    /* transform: translate(-50%, -50%); */
+  }
+
 }
 
 
@@ -1002,6 +1012,14 @@ strong {
   #educational-background li {
     width: 100%;
   }
+  .wrapper1 .display,
+  .wrapper1 span{
+    position: absolute;
+    top: 70%;
+    left: 75%;
+    
+    /* transform: translate(-50%, -50%); */
+  }
 }
 
 /* Clock */
@@ -1032,7 +1050,7 @@ strong {
 .wrapper1 span{
   position: absolute;
   top: 70%;
-  left: 85%;
+  left: 90%;
   
   /* transform: translate(-50%, -50%); */
 }
@@ -1047,7 +1065,7 @@ strong {
 .display #time{
   line-height: 85px;
   color: #000;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 600;
   letter-spacing: 1px;
   background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
